@@ -1,6 +1,8 @@
 package com.uberclient;
 
 import com.facebook.react.ReactActivity;
+// import com.airbnb.android.react.maps.MapsPackage;
+
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +14,12 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "uberclient";
   }
+
+  // @Override
+  // protected List<ReactPackage> getPackages() {
+  //   return Arrays.<ReactPackage>asList(
+  //       new MainReactPackage(),
+  //       new MapsPackage()
+  //   );
+  // }
 }
