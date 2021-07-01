@@ -3,20 +3,19 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import DestinationSearch from '../screens/destinationSearch';
 import SearchResults from '../screens/searchResults';
-
-
+import Register from '../screens/Register';
+import SignIn from '../screens/SingIn';
 
 const Stack = createStackNavigator();
 
 export default function HomeNavigation() {
    return (
-      <Stack.Navigator screenOptions={{
-         headerShown: false
-      }}
-      >
-         <Stack.Screen name="Home" component={HomeScreen}/>
-         <Stack.Screen name="DestinationSearch" component={DestinationSearch}/>
-         <Stack.Screen name="SearchResults" component={SearchResults}/>
+      <Stack.Navigator>
+         <Stack.Screen name="SingIn" component={SignIn}/>
+         <Stack.Screen name="Register" component={Register}/>
+         <Stack.Screen options={{headerShown: false}} name="Home" component={HomeScreen}/>
+         <Stack.Screen options={{headerShown: false}} name="DestinationSearch" component={DestinationSearch}/>
+         <Stack.Screen options={{headerShown: false}} name="SearchResults" component={SearchResults}/>
       </Stack.Navigator>      
    )
 }

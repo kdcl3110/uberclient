@@ -23,6 +23,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Root from './src/navigation/Root';
 import Geolocation from '@react-native-community/geolocation';
 import { NavigationContainer } from '@react-navigation/native';
+import { Provider } from 'react-redux';
+import store from './src/Store';
 
 
 
@@ -69,9 +71,11 @@ const App: () => Node = () => {
   }, [])
 
   return (
-    <NavigationContainer>
-      <Root/>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Root/>
+      </NavigationContainer>
+    </Provider>
   );
 };
 
