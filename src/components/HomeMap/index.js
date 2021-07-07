@@ -10,18 +10,18 @@ const HomeMap = (props) => {
             provider= {PROVIDER_GOOGLE}
             showsUserLocation={true}
             initialRegion={{
-                latitude: 37.78825,
-                longitude: -122.4324,
+                latitude: 3.866667                ,
+                longitude: 11.516667,
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
             }}
-        >
-            <Marker coordinate={{ latitude : 37.78825 , longitude : -122.4324 }}>
+        />
+            /* <Marker coordinate={{ latitude : 3.866667 , longitude : 11.516667 }}>
                 <Image 
                     style={{width: 70, height: 70, resizeMode: 'contain'}} 
                     source={require('../../assets/images/top-UberX.png')}/>
-            </Marker> 
-        </MapView>
+            </Marker>  */
+        //</MapView>
     )
 }
 

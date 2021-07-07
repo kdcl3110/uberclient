@@ -1,8 +1,5 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
-import DestinationSearch from '../screens/destinationSearch';
-import SearchResults from '../screens/searchResults';
 import HomeNavigation from './Stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Settings from '../screens/Settings'

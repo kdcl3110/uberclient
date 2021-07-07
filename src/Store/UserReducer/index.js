@@ -1,11 +1,12 @@
-const initialState = [
-   {
+const initialState = {
+   user: {
       uid: '',
       displayName: '',
       email: '',
-      urlPhoto: ''
+      urlPhoto: '',
+      isLogin: false
    }
-]
+}
 
 const UPDATE_USER = 'UPDATE_USER'
 

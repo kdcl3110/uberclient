@@ -8,9 +8,9 @@ import styles from './style'
 const Covidmessge = (props) => {
     return (
         <View style={styles.constainer}>
-            <Text style={styles.title}>travel only if necessary </Text>
-            <Text style={styles.text}>help flatten  the curve. if you must travel , please exercise caution for your safe fafely and the safely of  our community</Text>
-            <Text style={styles.learnMore}>learn more</Text>
+            <Text style={styles.title}>Bienvienue sur uber </Text>
+            <Text style={styles.text}>Pour commencer une course veullez cliquer sur le boutton en dessous</Text>
+            <Text style={styles.learnMore}>allez-y</Text>
         </View>
         
     )

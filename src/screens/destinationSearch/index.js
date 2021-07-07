@@ -36,7 +36,6 @@ const DestinationSearch = (props)=>{
     }
 
     useEffect(()=>{
-        console.warn("test")
         toNavigate()
     }, [originPlace, destinationPlace])
 
@@ -44,7 +43,7 @@ const DestinationSearch = (props)=>{
         <SafeAreaView>
             <View style={styles.container}>
                 <GooglePlacesAutocomplete
-                    placeholder='where from?'
+                    placeholder='où êtes vous?'
                     onPress={(data, details = null) => {
                         setOriginPlace({data, details})
                         console.log(data, details);
@@ -52,7 +51,7 @@ const DestinationSearch = (props)=>{
                     enablePoweredByContainer = {false}
                     suppressDefaultStyles
                     currentLocation={true}
-                    currentLocationLabel='current location'
+                    currentLocationLabel='ma position'
                     styles={{
                         textInput: styles.textInput,
                         container: styles.autocompleteContainer,
@@ -62,7 +61,7 @@ const DestinationSearch = (props)=>{
 
                     fetchDetails
                     query={{
-                        key: 'AIzaSyAGEWYmloTFMMFmvN8arxfxASoSY73RH48',
+                        key: 'AIzaSyAyTzROc_wrO-16oCrvH07HLDXPMT9jigI',
                         language: 'en',
                     }}
                     renderRow={(data) => <PlaceRow data={data} />}
@@ -71,7 +70,7 @@ const DestinationSearch = (props)=>{
                 />
                 
                 <GooglePlacesAutocomplete
-                    placeholder='where to?'
+                    placeholder='où allez vous?'
                     onPress={(data, details = null) => {
                         setdestinationPlace({data, details})
                         console.log(data, details);
@@ -89,18 +88,13 @@ const DestinationSearch = (props)=>{
 
                     fetchDetails
                     query={{
-                        key: 'AIzaSyAGEWYmloTFMMFmvN8arxfxASoSY73RH48',
+                        key: 'AIzaSyAyTzROc_wrO-16oCrvH07HLDXPMT9jigI',
                         language: 'en',
                     }}
                     renderRow={(data) => <PlaceRow data={data} />}
-                />      
-                {/* Circle near Origin input */}
+                />
                 <View style={styles.circle} />
-
-                {/* Line between dots */}
                 <View style={styles.line} />
-
-                {/* Square near Destination input */}
                 <View style={styles.square} />
 
             </View>

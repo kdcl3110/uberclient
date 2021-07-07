@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, Pressable } from 'react-native';
 
 import styles from './styles';
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-const HuberTypeRow = ({source, type, description}) => {
+const HuberTypeRow = ({source, type, description, onPress, isSelected}) => {
     
     const getImage = ()=>{
         if(source === 'UberX'){
@@ -19,7 +19,9 @@ const HuberTypeRow = ({source, type, description}) => {
     }
 
     return(
-        <View style={styles.container}>
+        <Pressable 
+            onPress={onPress} 
+            style={[styles.container, {backgroundColor: isSelected ? '#efefef' : 'white'}]}>
             {/* image */}
             <Image 
                 style={styles.image}
@@ -34,7 +36,7 @@ const HuberTypeRow = ({source, type, description}) => {
                 <Text style={styles.desc}>{description}</Text>
             </View>
 
-        </View>
+        </Pressable>
     )
 };
 

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     timeContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: 80,
+        width: 130,
         padding: 10,
         backgroundColor: '#fff',
         borderRadius: 50
