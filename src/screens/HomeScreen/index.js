@@ -4,13 +4,15 @@ import Entypo from "react-native-vector-icons/Entypo";
 import HomeMap from '../../components/HomeMap'
 import Covidmessge from '../../components/CovidMessage'
 import HomeSearch from '../../components/HomeSearch'
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation, useRoute } from '@react-navigation/core';
+
 
 const HomeScreen = (props) => {
     const navigation = useNavigation()
+    const route = useRoute()
     return (
         <View>
-            <View style={{height: 400}}>
+            <View style={{height: '70%'}}>
                 <HomeMap/>
             </View>
             <Covidmessge/>

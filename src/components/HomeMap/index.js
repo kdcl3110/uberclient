@@ -10,7 +10,7 @@ const HomeMap = (props) => {
             provider= {PROVIDER_GOOGLE}
             showsUserLocation={true}
             initialRegion={{
-                latitude: 3.866667                ,
+                latitude: 3.866667,
                 longitude: 11.516667,
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,

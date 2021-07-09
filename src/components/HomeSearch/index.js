@@ -28,20 +28,20 @@ const HomeSearch = (props) => {
             </TouchableOpacity>
 
             {/*previous destination */}    
-            <View style={styles.row}>
+            {/* <View style={styles.row}>
                 <View style={styles.iconContainer}>
                     <AntDesign name={'clockcircle'} size={20} color={'#fff'}/>
                 </View>
                 <Text style={styles.destinationText}>Spin Nightclub</Text>
-            </View>
+            </View> */}
 
             {/*Home destination */}
-            <View style={styles.row}>
+            {/* <View style={styles.row}>
                 <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
                     <Entypo name={'home'} size={20} color={'#fff'}/>
                 </View>
                 <Text style={styles.destinationText}>Home</Text>
-            </View>
+            </View> */}
         </View>
         
     )

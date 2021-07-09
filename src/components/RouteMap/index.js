@@ -47,8 +47,9 @@ const RouteMap = ({origin, destination}) => {
                     setTime(result.duration)
                     setDistance(result.distance)
                     try{
-                        AsyncStorage.setItem("duration", result.duration)
-                        AsyncStorage.setItem("distance", result.distance)
+                        AsyncStorage.setItem("duration", `${result.duration}`)
+                        AsyncStorage.setItem("distance", `${result.distance}`)
+                        AsyncStorage.setItem("position", JSON.stringify({origin: originLoc, destination: destLoc}))
                     }catch(e){
                         console.log(e.messase)
                     }

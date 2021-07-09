@@ -59,9 +59,4 @@ export const getUser = async () =>{
   }
 }
 
-export const showAmount = async () =>{
-   const cource = await AsyncStorage.getItem('newCourse')
-   const user = await AsyncStorage.getItem('user')
-   const duration = await AsyncStorage.getItem('duration')
-   const distance =  await AsyncStorage.getItem('distance')
-}
+
